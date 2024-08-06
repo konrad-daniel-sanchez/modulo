@@ -4,13 +4,23 @@
 
 package com.mycompany.calcularmodulo;
 
+import java.util.Scanner;
+
 /**
  *
  * @author USUARIO
  */
 public class CalcularModulo {
+    
+    public static int calcularModulo(int n1, int n2){
+        return n1 % n2;
+    }
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner lector = new Scanner(System.in);
+        int numero1 = lector.nextInt();
+        int numero2 = lector.nextInt();
+        int resultado = calcularModulo(numero1, numero2);
+        System.out.println("El módulo es " + resultado);
     }
 }
